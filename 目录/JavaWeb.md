@@ -1,0 +1,66 @@
+- 一、Servlet / JSP / Web
+  - 1. 什么是Servlet
+  - 2. Tomcat容器等级
+  - 3. Servlet执行流程
+    - 浏览器请求
+    - 服务器创建对象
+    - 调用init方法
+    - 调用service方法
+    - 向浏览器响应
+  - 4. Servlet生命周期
+  - 5. Tomcat装载Servlet的三种情况
+  - 6. forward和redirect
+  - 7. Jsp和Servlet的区别
+  - 8. tomcat和Servlet的联系
+  - 9. cookie和session的区别
+  - 10. JavaEE中的三层结构和MVC
+  - 11. RESTful 架构
+    - 什么是REST
+    - 什么是RESTful API
+    - RESTful 风格
+- 二、Spring
+  - 1. Spring IOC、AOP的理解、实现的原理，以及优点
+    - IOC
+    - AOP
+  - 2. Spring IOC初始化过程
+  - 3. Struts拦截器和Spring AOP区别
+  - 4. Spring 是如何管理事务的，事务管理机制
+  - 5. Spring中bean加载机制，生命周期
+    - 加载机制
+    - 生命周期
+  - 6. Bean实例化的三种方式
+  - 7. BeanFactory 和 FactoryBean
+  - 8. BeanFactory和ApplicationContext
+    - 两者装载bean的区别
+    - 我们该用BeanFactory还是ApplicationContent
+    - ApplicationContext其他特点
+    - spring的AOP（常用的是拦截器
+    - spring载入多个上下文
+  - 9. ApplicationContext 上下文的生命周期
+  - 10. Spring中autowire和resourse关键字的区别
+  - 11. Spring注解
+    - 一： 组件类注解
+    - 二：装配bean时常用的注解
+  - 12. Spring 中设计模式
+    - 工厂模式
+    - 单态模式【单例模式】（Singleton）
+    - 适配器（Adapter）
+    - 代理（Proxy）
+    - 观察者（Observer）
+  - 13. Spring 的优点有哪些
+  - 14. IOC和AOP用到的设计模式
+- 二、SpringMVC
+  - 1. Spring MVC的工作原理
+  - 2. Spring MVC注解的优点
+- 三、Hibernate
+  - 1. 简述Hibernate常见优化策略。
+  - 2. Hibernate一级缓存与二级缓存之间的区别
+  - 3. Hibernate的理解
+- 四、MyBatis
+  - 1. Mybatis原理
+  - 2. Mybatis和Hibernate的区别
+- 五、Tomcat
+
+  - 1. Tomcat加载基本流程，涉及到的参数
+- 六、SpringBoot
+- 七、SpringCloud

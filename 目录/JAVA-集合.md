@@ -1,0 +1,56 @@
+
+
+- 一、概述
+  - 集合框架图
+  - Collection
+  - Map
+  - 工具类
+  - 通用实现
+- 二、深入源码分析
+  - ArrayList
+    - 1. 序列化
+    - 2. 扩容
+    - 3. 删除元素
+    - 4. Fail-Fast
+  - Vector
+    - 1. 同步
+    - 2. ArrayList 与 Vector
+    - 3. Vector 替代方案
+      - synchronizedList
+      - CopyOnWriteArrayList
+  - LinkedList
+    - 1. add()
+    - 2. remove()
+    - 3. get()
+    - 4. ArrayList 与 LinkedList
+  - HashMap
+    - 1. 存储结构
+      - JDK1.7 的存储结构
+      - JDK1.8 的存储结构
+    - 2. 重要参数
+    - 3. 确定哈希桶数组索引位置
+    - 4. 分析HashMap的put方法
+    - 5. 扩容机制
+    - 6. 线程安全性
+    - 7. JDK1.8与JDK1.7的性能对比
+    - 8. Hash较均匀的情况
+    - 9. Hash极不均匀的情况
+    - 10. HashMap与HashTable
+  - ConcurrentHashMap
+    - 1. 存储结构
+    - 2. size 操作
+    - 3. 同步方式
+    - 4. JDK 1.8 的改动
+  - HashSet
+    - 1. 成员变量
+    - 2. 构造函数
+    - 3. add()
+  - LinkedHashSet and LinkedHashMap
+    - 1. get()
+    - 2. put()
+    - 3. remove()
+    - 4. LinkedHashSet
+    - 5. LinkedHashMap经典用法
+- 三、容器中的设计模式
+  - 迭代器模式
+  - 适配器模式

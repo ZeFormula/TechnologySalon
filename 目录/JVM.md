@@ -1,0 +1,80 @@
+- JVM体系结构
+  - JVM模块简介
+  - JVM工作原理
+- 1. 运行时数据区域
+  - 1. 程序计数器（线程私有）
+  - 2. 虚拟机栈（线程私有）
+  - 3. 本地方法栈（线程私有）
+  - 4. 堆
+    - 新生代 （Young Generation）
+    - 老年代 （Old Generation）
+    - 永久代 （Permanent Generation）
+  - 5. 方法区
+  - 6. 运行时常量池
+  - 7. 直接内存
+- 2. 判断一个对象是否可被回收
+  - 1. 引用计数算法
+  - 2. 可达性分析算法
+    - ★ GC用的引用可达性分析算法中，哪些对象可作为GC Roots对象
+  - 3. 引用类型
+    - 1. 强引用（Strong Reference）
+    - 2. 软引用（Soft Reference）
+    - 3. 弱引用（Weak Reference）
+    - 4. 虚引用（Phantom Reference）
+  - 4. 方法区的回收
+  - 5. finalize()
+- 3. 垃圾收集算法（垃圾处理方法）
+  - 1. 标记 - 清除
+  - 2. 标记 - 整理
+  - 3. 复制回收
+  - ★ 分代收集
+- 4. 垃圾收集器
+  - 1. Serial
+  - 2. ParNew
+  - 3. Parallel Scavenge
+  - 4. Serial Old
+  - 5. Parallel Old
+  - 6. CMS
+  - 7. G1
+- 5. 内存分配与回收策略
+  - 1. 什么时候进行Minor GC，Full GC
+  - 2. 内存分配策略
+    - 1. 对象优先在 Eden 分配
+    - 2. 大对象直接进入老年代
+    - 3. 长期存活的对象进入老年代
+    - 4. 动态对象年龄判定
+    - 5. 空间分配担保
+  - 3. Full GC 的触发条件
+    - 1. 调用 System.gc()
+    - 2. 老年代空间不足
+    - 3. 空间分配担保失败
+    - 4. JDK 1.7 及以前的永久代空间不足
+    - 5. Concurrent Mode Failure
+- 6. 类加载机制
+  - 类的生命周期
+  - 类初始化时机
+    - 1. 主动引用
+    - 2. 被动引用
+  - 类加载过程
+    - 1. 加载
+    - 2. 验证
+    - 3. 准备
+    - 4. 解析
+    - 5. 初始化
+  - 类加载器
+    - 1. 类与类加载器
+    - 2. 类加载器分类
+    - 3. 双亲委派模型
+- 7. Student s = new Student(); 在内存中做了哪些事情
+- 8. Java虚拟机工具
+  - （1）jps
+  - （2）jstat
+  - （3）jinfo
+  - （4）jmap
+  - （5）jhat
+  - （6）jstack
+  - （7）jconsole
+  - （8）jvisualvm
+- 9. JVM调优
+- 10. JVM线程死锁如何判断原因？如果用VisualVM，dump线程信息出来，会有哪些信息
+- 11. 内存泄露
